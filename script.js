@@ -1,6 +1,6 @@
 function buscarDescricao() {
   var codigo = document.getElementById("codigo").value;
-  var url = "https://raw.githubusercontent.com/Caicossauro/form3/main/asd.json";
+  var url = "https://raw.githubusercontent.com/Caicossauro/form3/asd.json";
 
   axios.get(url)
     .then(function(response) {
