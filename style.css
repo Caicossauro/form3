@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    color: #000; /* Cor do texto em preto */
   }
   
   body {
@@ -10,7 +11,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #101026;
+    background: #fff280;
   }
   
   section {
@@ -18,14 +19,17 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 10px 45px;
-    background: #1d1d2e;
-    width: 500px;
+    padding: 10px;
+    background: #6495ed;
+    width: 140%;
+    max-width: 800px;
+    flex-grow: 1; /* Altura responsiva da seção */
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 20px;
   }
   
   section h2 {
-    color: #f5f5f5;
+    color: #000; /* Cor do texto em preto */
     font-size: 2.5rem;
     margin: 2rem;
   }
@@ -33,11 +37,14 @@
   section form {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Centralizar os inputs horizontalmente */
     width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
   }
   
   form label {
-    color: #f5f5f5;
+    color: #000; /* Cor do texto em preto */
     font-size: 17px;
     margin-bottom: 4px;
   }
@@ -50,33 +57,33 @@
     margin-bottom: 20px;
     font-size: 15px;
     transition: all 0.5s;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%; /* Aumento da largura dos inputs */
   }
   
   form input:focus,
   form textarea:focus {
-    border-radius: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
   }
   
   form button {
-    padding: 15px;
+    padding: 8px 12px; /* Tamanho dos botões */
     cursor: pointer;
     font-size: 16px;
     background: transparent;
-    border: 2px solid #f5f5f5;
-    color: #f5f5f5;
+    border: 2px solid #fff; /* Cor da borda em branco */
+    color: #000; /* Cor do texto em preto */
     transition: all 1s;
     margin-bottom: 20px;
+    border-radius: 10px;
+    width: 50%; /* Largura dos botões em relação aos inputs */
   }
   
   form button:hover {
-    background: #f5f5f5;
-    color: #101026;
-    border-radius: 16px;
-  }
-  
-  form .descricao {
-    color: #f5f5f5;
-    font-size: 15px;
-    margin-top: 10px;
+    background: #fff; /* Cor de fundo em branco */
+    color: #000; /* Cor do texto em preto */
+    border-radius: 10px;
   }
   
