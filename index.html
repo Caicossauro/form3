@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Buscar Descrição</title>
+  <meta charset="utf-8">
+  <title>Formulário</title>
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
-<body>
-  <label for="codigo">Digite o código:</label>
-  <input type="text" id="codigo">
-  <button onclick="buscarDescricao()">Buscar</button>
-  <div id="descricao"></div>
 
+<body>
+  <section>
+    <h2>Contato</h2>
+    <form id="formulario" action="https://api.staticforms.xyz/submit" method="post">
+      <label>Nome</label>
+      <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required> 
+      <label>Email</label>
+      <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+      <label>Mensagem</label>
+      <textarea name="message" id="" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+      <label for="codigo">Digite o código:</label>
+      
+      <div id="descricao" class="descricao"></div> <br>
+      <input type="text" id="codigo" name="codigo" placeholder="Digite o código" autocomplete="off" required>
+      <button type="button" onclick="buscarDescricao(event)">Buscar</button>     
+      <button type="submit">Enviar</button>
+      <input type="hidden" name="accessKey" value="15bf9351-6a4f-44ed-9a12-5309541c0ec2"> 
+      <input type="hidden" name="redirectTo" value="https://caicossauro.github.io/form2/obrigado.html">
+    </form> 
+  </section>
   <script src="script.js"></script>
 </body>
 </html>
